@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quienes somos?</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.svg" />
+    <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <style>
+        /* Esto obliga a Bootstrap a usar TU azul en lugar del suyo */
+        .bg-primary {
+            background-color: #0084C1 !important;
+        }
+
+        .bg-white {
+            background-color: #FFFFFF !important;
+        }
+
+        .bg-dark {
+            background-color: #1F1C1C !important;
+        }
+
+        .border-primary {
+            background-color: #0084C1 !important;
+        }
+
+        /* 1. Cambiamos el color 'Primary' en la raíz de todo el sitio */
+        :root {
+            --bs-primary: #005696 !important;
+            --bs-primary-rgb: 0, 86, 150 !important;  Versión para transparencias 
+        }
+
+        /* 2. Forzamos el borde superior del header en cualquier estado */
+        /*header.header,
+        header.header.border-primary,
+        .header-sticky,
+        .is-sticky {
+            border-top-color: #005696 !important;
+            border-color: #005696 !important;*/ /* Por si el cambio afecta a otros bordes */
+        /*}*/
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header border-4 border-top position-fixed start-0 top-0 w-100" style="border-top-color: #005696 !important;">
+        <div class="container">
+            <div class="header-wrapper d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="index.html" class="logo-white">
+                        <img src="../assets/images/logos/logo-white.svg" alt="logo" class="img-fluid">
+                    </a>
+                    <a href="index.html" class="logo-dark">
+                        <img src="../assets/images/logos/logo-dark.svg" alt="logo" class="img-fluid">
+                    </a>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+
+                    <div class="btn-group">
+                        <button class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+                                type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-dark"></iconify-icon>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end p-4">
+                            <div class="d-flex flex-column gap-6">
+                                <div class="hstack justify-content-between border-bottom pb-6">
+                                    <p class="mb-0 fs-5 text-dark">Menu</p>
+                                    <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
+                                </div>
+                                <div class="d-flex flex-column gap-3">
+                                    <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                                        <li class="header-item">
+                                            <a href="index.html" aria-current="true"
+                                               class="header-link active hstack gap-2 fs-7 fw-bold text-dark">
+                                                <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                                                     class="img-fluid animate-spin">Home
+                                            </a>
+                                        </li>
+                                        <li class="header-item">
+                                            <a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark">
+                                                <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                                                     class="img-fluid animate-spin">Acerca de nosotros
+                                            </a>
+                                        </li>
+                                        <li class="header-item">
+                                            <a href="projects.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark">
+                                                <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                                                     class="img-fluid animate-spin">Nuestros proyectos
+                                            </a>
+                                        </li>
+                                        <li class="header-item">
+                                            <a href="contact.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark">
+                                                <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                                                     class="img-fluid animate-spin">Contactanos
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--  Page Wrapper -->
+    <div class="page-wrapper overflow-hidden">
+
+        <!--  Banner Section -->
+        <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end"
+                 style="background-image: url(../assets/images/backgrounds/aboutus-banner.jpg);">
+            <div class="container">
+                <div class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1">
+                    <div class="row align-items-center">
+                        <div class="col-xl-4">
+                            <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100"
+                                 data-aos-duration="1000">
+                                <img src="../assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
+                                <p class="mb-0 text-white fs-5 text-opacity-70">
+                                    Desarrollamos software a medida, <span class="text-primary">
+                                        en base a las necesidades específicas de nuestros clientes
+                                    </span> en estos doce años, los hemos acompañado con diversos desarrollos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <h1 class="mb-0 fs-16 text-white lh-1">Detesim</h1>
+                        <a href="javascript:void(0)" class="p-1 ps-7 bg-primary rounded-pill">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  About Content Section -->
+        <section class="about-content py-5 py-lg-11 py-xl-12">
+            <div class="container">
+                <div class="d-flex flex-column gap-5 gap-xl-11 gap-xxl-12">
+                    <div class="row gap-4 gap-lg-0">
+                        <div class="col-lg-4">
+                            <h2 class="fs-13 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Detesim</h2>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="d-flex flex-column gap-4 gap-lg-5" data-aos="fade-up" data-aos-delay="200"
+                                 data-aos-duration="1000">
+                                <p class="mb-0 fs-5 text-dark">
+                                    Desarrolla tus soluciones tecnológicas, junto a un aliado estratégico,
+                                    que te proporcione métricas de eficacia, en cada uno de los procesos
+                                    que conforman tu empresa, con la seguridad que todas éstas, nos sirvan
+                                    para seguir creciendo, tomar decisiones y optimizar los tiempos de respuesta.
+                                </p>
+                                <p class="mb-0 fs-5 text-dark">
+                                    Detesim S.R.L., es una empresa dedicada al desarrollo de software que
+                                    constantemente va revisando todas aquellas tecnologías emergentes,
+                                    que nos ayuden a construir una infraestructura sólida, y al mismo tiempo
+                                    procesar mayores volúmenes de información, para asegurar la dirección
+                                    empresarial de nuestros clientes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-xl-5">
+                        <div class="col-md-6 col-lg-4 mb-8 mb-lg-0">
+                            <div class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                                <h2 class="mb-0 fs-13 pb-7 border-bottom"><span class="count" data-target="12">12</span> Años</h2>
+                                <div class="d-flex flex-column gap-3">
+                                    <h4 class="mb-0">Experiencia desarrollando software</h4>
+                                    <p class="mb-0">
+                                        Siempre con la eficiencia como norte se desarrollaron multiples soliciones para
+                                        nuestros clientes. Priorizando las necesidades especificas del negocio.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-8 mb-lg-0">
+                            <div class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                                <h2 class="mb-0 fs-13 pb-7 border-bottom"><span class="count" data-target="60">60</span>+ Clientes</h2>
+                                <div class="d-flex flex-column gap-3">
+                                    <h4 class="mb-0">Distribuidoras y empresas que confian en nuestros sistemas y soporte</h4>
+                                    <p class="mb-0">
+                                        Clientes y Empresas que confian en nosotros para brindarles soluciones a medida
+                                        para mejorar sus procesos. Socios satisfechos a lo largo de todo el País.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-8 mb-lg-0">
+                            <div class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                                <h2 class="mb-0 fs-13 pb-7 border-bottom"><span class="count" data-target="14">14</span>+ Socios estrategicos</h2>
+                                <div class="d-flex flex-column gap-3">
+                                    <h4 class="mb-0">Crecimiento sostenido</h4>
+                                    <p class="mb-0">
+                                        Hemos crecido paso a paso junto a nuestros clientes, demostrando
+                                        que la confianza, la responsabilidad y el trabajo bien hecho
+                                        generan resultados sólidos. Hoy somos una empresa consolidada que
+                                        continúa expandiéndose gracias a la recomendación y fidelidad de
+                                        quienes confían en nosotros.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  About Img Section -->
+        <section class="about-img">
+            <img src="../assets/images/about/about-img.jpg" alt="" class="w-100 object-fit-cover">
+            <div class="marquee w-100 d-flex align-items-center overflow-hidden bg-primary py-4">
+                <div class="marquee-content d-flex align-items-center gap-8">
+
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Kimberly - Clark</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Nestle</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Unilever</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Cerveceria Boliviana Nacional</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Arcor</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Grupo A.J.Vierci</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Copelme</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Hipermaxi</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Super - SAS</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Fidalga</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Mixtura - Supermercados</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Makro Parque</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Los Tajibos</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Bees</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Kimberly - Clark</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Nestle</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Unilever</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Cerveceria Boliviana Nacional</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Arcor</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Grupo A.J.Vierci</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Copelme</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Hipermaxi</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Super - SAS</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Fidalga</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Mixtura - Supermercados</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Makro Parque</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Los Tajibos</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Bees</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Kimberly - Clark</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Nestle</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Unilever</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Cerveceria Boliviana Nacional</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Arcor</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Grupo A.J.Vierci</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Copelme</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Hipermaxi</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Super - SAS</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Fidalga</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Mixtura - Supermercados</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Makro Parque</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Los Tajibos</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+                    <div class="hstack gap-4 flex-shrink-0">
+                        <h4 class="mb-0">Bees</h4>
+                        <span class="round-10 bg-dark bg-opacity-10 rounded-circle flex-shrink-0"></span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--  Conoce nuestros desarrollos -->
+        <section class="meet-our-team py-5 py-lg-11 py-xl-12">
+            <div class="container">
+                <div class="d-flex flex-column gap-5 gap-xl-11">
+                    <div class="row gap-7 gap-xl-0">
+                        <div class="col-xl-4 col-xxl-4">
+                            <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
+                                 data-aos-duration="1000">
+                                <span class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">06</span>
+                                <hr class="border-line bg-white">
+                                <span class="badge text-bg-dark">Equipo</span>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-xxl-7">
+                            <div class="row">
+                                <div class="col-xxl-8">
+                                    <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
+                                         data-aos-duration="1000">
+                                        <h2 class="mb-0">Conoce a nuestro equipo</h2>
+                                        <p class="fs-5 mb-0 text-opacity-70">
+                                            Más que una empresa de tecnología, somos un equipo de especialistas con décadas
+                                            de experiencia acumulada en software, procesos empresariales, distribución,
+                                            logística, transformación digital y atención al cliente.
+                                        </p>
+                                        <p class="fs-5 mb-0 text-opacity-70">
+                                            Nuestra fortaleza radica en la combinación de conocimientos
+                                            técnicos y visión de negocio, lo que nos permite desarrollar soluciones
+                                            que generan valor real para las organizaciones. Con presencia y soporte
+                                            a nivel nacional, acompañamos a nuestros clientes en cada desafío,
+                                            convirtiendo la experiencia en resultados concretos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
+                            <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="100"
+                                 data-aos-duration="1000">
+                                <div class="meet-team-img position-relative overflow-hidden">
+                                    <img src="../assets/images/team/team-img-1.jpg" alt="team-img" class="img-fluid w-100">
+                                    <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
+                                        <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
+                                            <li>
+                                                <a href="https://twitter.com"
+                                                   class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center">
+                                                    <img src="../assets/images/svgs/icon-twitter.svg" alt="twitter">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.behance.net/"
+                                                   class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center">
+                                                    <img src="../assets/images/svgs/icon-be.svg" alt="be">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com"
+                                                   class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center">
+                                                    <img src="../assets/images/svgs/icon-linkedin.svg" alt="linkedin">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="meet-team-details">
+                                    <h4 class="mb-0">Martha Finley</h4>
+                                    <p class="mb-0">Creative Director</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
+                            <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="200"
+                                 data-aos-duration="1000">
+                                <div class="meet-team-img position-relative overflow-hidden">
+                                    <img src="../assets/images/team/team-img-2.jpg" alt="team-img" class="img-fluid w-100">
+                                    <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
+                                        <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
+                                            <li>
+                                                <a href="https://twitter.com"
+                                                   class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center">
+                                                    <img src="../assets/images/svgs/icon-twitter.svg" alt="twitter">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.behance.net/"
+                                                   class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center">
+                                                    <img src="../assets/images/svgs/icon-be.svg" alt="be">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com"
+                                                   class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center">
+                                                    <img src="../assets/images/svgs/icon-linkedin.svg" alt="linkedin">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="meet-team-details">
+                                    <h4 class="mb-0">Floyd Miles</h4>
+                                    <p class="mb-0">Marketing Strategist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
+                            <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="300"
+                                 data-aos-duration="1000">
+                                <div class="meet-team-img position-relative overflow-hidden">
+                                    <img src="../assets/images/team/team-img-3.jpg" alt="team-img" class="img-fluid w-100">
+                                    <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
+                                        <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
+                                            <li>
+                                                <a href="https://twitter.com"
+                                                   class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center">
+                                                    <img src="../assets/images/svgs/icon-twitter.svg" alt="twitter">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.behance.net/"
+                                                   class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center">
+                                                    <img src="../assets/images/svgs/icon-be.svg" alt="be">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com"
+                                                   class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center">
+                                                    <img src="../assets/images/svgs/icon-linkedin.svg" alt="linkedin">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="meet-team-details">
+                                    <h4 class="mb-0">Glenna Snyder</h4>
+                                    <p class="mb-0">Lead Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
+                            <div class="meet-team d-flex flex-column gap-4" data-aos="fade-up" data-aos-delay="400"
+                                 data-aos-duration="1000">
+                                <div class="meet-team-img position-relative overflow-hidden">
+                                    <img src="../assets/images/team/team-img-4.jpg" alt="team-img" class="img-fluid w-100">
+                                    <div class="meet-team-overlay p-7 d-flex flex-column justify-content-end">
+                                        <ul class="social list-unstyled mb-0 hstack gap-2 justify-content-end">
+                                            <li>
+                                                <a href="https://twitter.com"
+                                                   class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center">
+                                                    <img src="../assets/images/svgs/icon-twitter.svg" alt="twitter">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.behance.net/"
+                                                   class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center">
+                                                    <img src="../assets/images/svgs/icon-be.svg" alt="be">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com"
+                                                   class="btn bg-white p-2 round-45 rounded-circle hstack justify-content-center">
+                                                    <img src="../assets/images/svgs/icon-linkedin.svg" alt="linkedin">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="meet-team-details">
+                                    <h4 class="mb-0">Albert Flores</h4>
+                                    <p class="mb-0">UX/UI Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer bg-dark py-5 py-lg-11 py-xl-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 mb-8 mb-xl-0">
+                    <div class="d-flex flex-column gap-8 pe-xl-5">
+                        <h2 class="mb-0 text-white">
+                            Hablemos de tu
+                            Próximo Proyecto
+                        </h2>
+                        <div class="d-flex flex-column gap-2">
+                            <a target="_blank" class="link-hover hstack gap-3 text-white fs-5">
+                                <iconify-icon icon="lucide:arrow-up-right" class="fs-7 text-primary"></iconify-icon>
+                                info@detesim.com
+                            </a>
+                            <!--<a href="https://maps.app.goo.gl/hpDp81fqzGt5y4bC8" target="_blank"
+                               class="link-hover hstack gap-3 text-white fs-5">
+                                <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary"></iconify-icon>
+                                info@wrappixel.com
+                            </a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+                    <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                        <li><a class="link-hover fs-5 text-white" href="index.html">Home</a></li>
+                        <li><a class="link-hover fs-5 text-white" href="about-us.html">Acerca de nosotros</a></li>
+                        <li><a class="link-hover fs-5 text-white" id="services" href="#services">Servicios</a></li>
+                        <li><a class="link-hover fs-5 text-white" href="projects.html">Nuestras Soluciones</a></li>
+                        <!--<li><a class="link-hover fs-5 text-white" href="terms-and-conditions.html">Terms</a></li>-->
+                        <!--<li><a class="link-hover fs-5 text-white" href="privacy-policy.html">Privacy Policy</a></li>-->
+                        <!--<li><a class="link-hover fs-5 text-white" href="404.html">Error 404</a></li>-->
+                    </ul>
+                </div>
+                <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+                    <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                        <li><a class="link-hover fs-5 text-white" href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a class="link-hover fs-5 text-white" href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a class="link-hover fs-5 text-white" href="https://x.com/">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-xl-3 mb-8 mb-xl-0">
+                    <p class="mb-0 text-white text-opacity-70 text-md-end">© Detesim copyright 2026</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="get-template hstack gap-2">
+        <a class="bg-primary px-3 py-2 rounded fs-3 fw-semibold text-dark" target="_blank"
+           href="https://wa.me/59178935115?text=Hola%20quiero%20agendar%20una%20reunion">Agenda una cita</a>
+        <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
+                id="scrollToTopBtn">
+            <iconify-icon icon="lucide:arrow-up" class="fs-7 text-dark"></iconify-icon>
+        </button>
+    </div>
+
+
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="../assets/libs/aos-master/dist/aos.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <!-- solar icons -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
